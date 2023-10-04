@@ -1,5 +1,6 @@
 // вне ноды require работать не будет, поэтому используем импорты
 import { searchArt } from "./art_helper.js";
+import './style.css';
 
 window.onload = (ev) => {
   init();
@@ -18,6 +19,5 @@ const handleSearchClick = (ev) => {
 };
 
 const renderResults = ({ artPieces }) => {
-  console.log(artPieces);
   document.getElementById("search-results").innerHTML = artPieces.join("");
 };
